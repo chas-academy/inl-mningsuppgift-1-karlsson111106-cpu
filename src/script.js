@@ -33,26 +33,27 @@ const contactBook = {
 
 function showContacts(contactBook, groupToShow) { // Rör ej denna kod
 
-  let result = "";
+  
+   
+    // Loopar igenom alla kontakter och jämför grupp
+  
 
-  for (let contact of contactBook.contacts) {
+  for (contact of contactBook.contacts) {
 
     if (contact.group === groupToShow) {
 
 
-      result += `${contact.name} ${contact.phone}\n`;
+      result  `Namn: ${contact.name} Telefon: ${contact.phone}`;
 
 
 
-  }
-   
-    // Loopar igenom alla kontakter och jämför grupp
-   
-    return result;
+    }
+    
   }
 
 }
 
+return result;
 
 // Rör ej denna kod
 showContacts(contactBook, groupToShow);
