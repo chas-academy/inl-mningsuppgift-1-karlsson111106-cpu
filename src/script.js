@@ -43,7 +43,7 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
     if (contact.group === groupToShow) {
 
 
-      result  `Namn: ${contact.name} Telefon: ${contact.phone}`;
+      return `Namn: ${contact.name} Telefon: ${contact.phone}`;
 
 
 
@@ -53,7 +53,6 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
 
 }
 
-return result;
 
 // Rör ej denna kod
 showContacts(contactBook, groupToShow);
